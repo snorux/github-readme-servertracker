@@ -1,0 +1,63 @@
+svg(width='400' height='145' viewbox='0 0 400 145' fill='none' xmlns='http://www.w3.org/2000/svg')
+  style.
+    .header {
+    font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #2f80ed;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    }
+    .stat {
+    font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #333;
+    }
+    .stagger {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    }
+    .rank-text {
+    font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333;
+    animation: scaleIn 0.3s ease-in-out forwards;
+    }
+    .bold { font-weight: 700 }
+    .icon {
+    fill: #4c71f2;
+    display: none;
+    }
+   
+    /* Animations */
+    @keyframes scaleIn {
+    from {
+    transform: translate(-5px, 5px) scale(0);
+    }
+    to {
+    transform: translate(-5px, 5px) scale(1);
+    }
+    }
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+    }
+    @keyframes rankAnimation {
+    from {
+    stroke-dashoffset: 251.32741228718345;
+    }
+    to {
+    stroke-dashoffset: 96.70498584282055;
+    }
+    }
+  rect(data-testid='card-bg' x='0.5' y='0.5' width='399' height='99%' rx='4.5' fill='#fffefe' stroke='#E4E2E2' stroke-opacity='1')
+  text.header(x='25' y='35') #{ServerName}
+  svg(x='0' y='55')
+    g(transform='translate(0, 0)')
+      g.stagger(style='animation-delay: 450ms' transform='translate(25, 0)')
+        text.stat.bold(y='12.5') Map:
+        text.stat(x='135' y='12.5' data-testid='stars') #{MapName}
+    g(transform='translate(0, 25)')
+      g.stagger(style='animation-delay: 600ms' transform='translate(25, 0)')
+        text.stat.bold(y='12.5') Players:
+        text.stat(x='135' y='12.5' data-testid='commits') #{CurrentPlayers}/#{MaxPlayers}
+    g(transform='translate(0, 50)')
+      g.stagger(style='animation-delay: 750ms' transform='translate(25, 0)')
+        text.stat.bold(y='12.5') IP:
+        text.stat(x='135' y='12.5' data-testid='prs') #{IP}
