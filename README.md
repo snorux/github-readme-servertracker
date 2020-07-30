@@ -13,7 +13,7 @@ Please check the [supported game list here](https://github.com/gamedig/node-game
 
 [![GFL CSS ZE](https://api.snowy.gg/tracker/css/92.119.148.14/27015)](https://github.com/SnowyGFL/github-readme-servertracker)
 
-[![GFL GMOD PH](https://api.snowy.gg/tracker/garrysmod/92.119.148.4/27015)](https://github.com/SnowyGFL/github-readme-servertracker)
+[![GFL TF2](https://api.snowy.gg/tracker/tf2/92.119.148.19/27015)](https://github.com/SnowyGFL/github-readme-servertracker)
 
 <sub>Card idea taken from [here](https://github.com/anuraghazra/github-readme-stats)</sub>
 
