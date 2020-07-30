@@ -15,6 +15,8 @@ Please check the [supported game list here](https://github.com/gamedig/node-game
 
 [![GFL GMOD PH](https://api.snowy.gg/tracker/garrysmod/92.119.148.4/27015)](https://github.com/SnowyGFL/github-readme-servertracker)
 
+<sub>Card idea taken from [here](https://github.com/anuraghazra/github-readme-stats)</sub>
+
 
 ### Self-Hosting the API
 ```sh
