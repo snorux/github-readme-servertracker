@@ -15,7 +15,8 @@ app.get('/tracker/:game/:ip/:port', async (req, res, next) => {
         let results = await query.search(game, ip, port);
         res.setHeader('Content-Type', 'image/svg+xml');
         res.setHeader("Cache-Control", 'public, s-maxage=20');
-        res.render('index', {ServerName: results.name.slice(0,40), 
+        res.render('index', {ServerName: results.name.slice(0,40),
+            GameName: results.raw.game, 
             MapName: results.map, 
             CurrentPlayers: results.players.length, 
             MaxPlayers: results.maxplayers, 
